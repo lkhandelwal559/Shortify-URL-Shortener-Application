@@ -12,7 +12,7 @@ Installation
 Setting up MongoDB
 Running the Project
 Project Structure
-License
+
 Features
 User Signup and Login: Users can create an account and log in to manage their short URLs.
 Home Page: Authenticated users can view their short URLs.
@@ -110,5 +110,4 @@ Project Structure
 └── README.md             # Project documentation
 
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
