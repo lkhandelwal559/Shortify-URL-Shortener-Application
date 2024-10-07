@@ -1,4 +1,4 @@
-Shortify.png
+[Shortify.png](https://github.com/lkhandelwal559/Shortify-URL-Shortener-Application/blob/ab96864ca4e42e21f1600d5e062c29d3c240ab1e/Shortify.png)
 Shortify: URL Shortener MERN Application
 
 
