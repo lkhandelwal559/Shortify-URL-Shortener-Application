@@ -1,4 +1,7 @@
 URL Shortener MERN Project
+
+
+
 This project is a simple URL Shortener application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It includes a backend with APIs for user authentication (signup, login) and URL shortening functionality.
 
 Table of Contents
@@ -9,35 +12,32 @@ Installation
 Setting up MongoDB
 Running the Project
 Project Structure
+License
 Features
 User Signup and Login: Users can create an account and log in to manage their short URLs.
 Home Page: Authenticated users can view their short URLs.
 URL Shortening: Shortens long URLs into short, manageable URLs.
 APIs
-1. Signup
+Signup
 Method: POST
 Endpoint: /api/signup
 Description: Registers a new user.
 Payload:
-json
-Copy code
 {
   "Name": "exampleUser",
-  "email": "xyz@abc.com"
+  "email": "xyz@abc.com",
   "password": "examplePass"
 }
-3. Login
+Login
 Method: POST
 Endpoint: /api/login
 Description: Logs in an existing user.
 Payload:
-json
-Copy code
 {
   "email": "xyz@abc.com",
   "password": "examplePass"
 }
-4. Home Page
+Home Page
 Method: GET
 Endpoint: /api/home
 Description: Returns a list of URLs shortened by the logged-in user.
@@ -47,82 +47,54 @@ npm (Node package manager)
 MongoDB (either local or cloud-based like MongoDB Atlas)
 Installation
 1. Clone the Repository
-bash
-Copy code
 git clone https://github.com/lkhandelwal559/URL-Shortener/
 2. Install Dependencies
-bash
-Copy code
 npm install
-This will install all backend dependencies defined in the package.json file.
-
 3. Set Up Environment Variables
 Create a .env file in the root directory and add the following variables:
 
-makefile
-Copy code
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/url-shortener
 JWT_SECRET=your_jwt_secret
 Make sure to replace your_jwt_secret with a secure secret for JWT authentication.
 
 Setting Up MongoDB
-You need to set up MongoDB locally before running the application. Follow the steps below:
-
 1. Download MongoDB
-Go to the MongoDB Download Center and download the Community Edition for Windows.
-Install it using the MSI installer and make sure to include the MongoDB shell (mongosh) during installation.
+Go to the MongoDB Download Center and download the Community Edition for your operating system. Install it using the MSI installer and make sure to include the MongoDB shell (mongosh) during installation.
+
 2. Create MongoDB Data Directory
 MongoDB needs a data directory to store its files. By default, it uses C:\data\db.
 
 Open File Explorer and create the following directories:
-bash
-Copy code
+
 C:\data\db
 Alternatively, you can create the directory using the Command Prompt:
 
-bash
-Copy code
 mkdir C:\data\db
 3. Start MongoDB Server
 After creating the data directory, start MongoDB by running the following command:
 
-bash
-Copy code
 mongod --dbpath "C:\data\db"
 This will start the MongoDB server on localhost:27017.
 
-You should see output similar to:
-
-bash
-Copy code
-MongoDB starting: pid=9644 port=27017 dbPath=C:\data\db 64-bit
 Running the Project
 1. Start the Backend Server
 After setting up MongoDB and environment variables, you can start the backend server by running:
 
-bash
-Copy code
 npm start
 The backend should be running at http://localhost:5000.
 
 2. Frontend Setup
 The frontend part of the project is built using React. Go into the client directory and install dependencies:
 
-bash
-Copy code
 cd client
 npm install
 To start the React development server:
 
-bash
-Copy code
-npm start app
-The frontend will be running at http://localhost:3000.
+npm start
+The frontend will be running at http://localhost:8001.
 
 Project Structure
-bash
-Copy code
 ├── client                # Frontend (React) application
 │   ├── public            # Public directory for frontend assets
 │   └── src               # React components and views
@@ -136,3 +108,7 @@ Copy code
 ├── server.js             # Express server setup
 ├── package.json          # Backend dependencies and scripts
 └── README.md             # Project documentation
+
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
