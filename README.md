@@ -1,4 +1,6 @@
-URL Shortener MERN Project
+Shortify.png
+Shortify: URL Shortener MERN Application
+
 
 
 
